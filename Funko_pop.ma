@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: Funko_pop.ma
-//Last modified: Fri, Sep 10, 2021 03:22:19 AM
+//Last modified: Fri, Sep 10, 2021 03:23:36 AM
 //Codeset: 1252
 requires maya "2019";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "3.1.2";
@@ -14,13 +14,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "6114D0FB-4B7E-27F3-5618-2787C8383FFD";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 0.47843708116004119 7.3036131012128971 44.055008844372814 ;
-	setAttr ".r" -type "double3" -3.3383519350439514 7200.199999999586 8.5415807238035311e-17 ;
+	setAttr ".t" -type "double3" -3.227394135653384 9.3341386277562215 44.101481400705524 ;
+	setAttr ".r" -type "double3" -8.1383519356718317 7196.1999999989821 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "C8948536-4984-3B40-2E91-C1B89E451CA9";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 49.999967945713209;
+	setAttr ".coi" 35.319956451451297;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -6671,12 +6671,12 @@ createNode areaLight -n "areaLightShape1" -p "areaLight1";
 	setAttr ".in" 0.064935058355331421;
 createNode transform -n "directionalLight1";
 	rename -uid "8BAF76A6-4668-4CC6-A748-7A860D5553C3";
-	setAttr ".t" -type "double3" 0 0 12.844177372949176 ;
+	setAttr ".t" -type "double3" 0 0 12.901536301542151 ;
 createNode directionalLight -n "directionalLightShape1" -p "directionalLight1";
 	rename -uid "63DD8795-4E53-4A7D-49D3-82B224F26901";
 	setAttr -k off ".v";
 	setAttr ".cl" -type "float3" 0.40361446 0.40361446 0.40361446 ;
-	setAttr ".col" 0.14584033674705665;
+	setAttr ".col" 0.2031992653400323;
 createNode lightLinker -s -n "lightLinker1";
 	rename -uid "E09567DD-48F9-AA04-3838-98977E9BF36D";
 	setAttr -s 12 ".lnk";
